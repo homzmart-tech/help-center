@@ -1,0 +1,227 @@
+ body {
+     background: #F9F9F9 !important;
+     font-family: 'Roboto';
+
+ }
+
+ .section1 {
+     background-image: url(./images/background.png);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 500px;
+
+     @media(max-width:768px) {
+         height: 230px !important;
+     }
+ }
+ span#basic-addon1{
+    background-color: #fff !important;
+ }
+
+ .input-group {
+     width: 690px !important;
+     height: 48px !important;
+     border-radius: 8px !important;
+
+     @media(max-width:768px) {
+         width: 100% !important;
+     }
+ }
+
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 16px;
+ }
+
+ .wrapper {
+     padding-top: 9%;
+
+     >h1 {
+         color: #fff;
+     }
+
+     >h3 {
+         color: #fff;
+         margin-bottom: 32px;
+     }
+ }
+
+ .tabCard {
+
+     grid-template-columns: repeat(4, 1fr) !important;
+     display: grid !important;
+     grid-gap: 16px;
+     align-items: center;
+     width: 100%;
+     margin-top: 8%;
+
+     @media screen and (max-width: 768px) {
+         grid-template-columns: repeat(2, 1fr) !important;
+         margin-top: 20%;
+     }
+
+
+ }
+
+ .tabCard .card {
+     border-radius: 16px;
+     background: #FFF;
+     padding: 18px 16px;
+     min-width: 262px;
+     min-height: 136px;
+     box-shadow: 0px 7.907px 7.907px 0px rgba(0, 0, 0, 0.02);
+     border-radius: 4px;
+     text-align: center;
+     margin-bottom: 16px;
+     border: unset !important;
+     cursor: pointer;
+
+     @media screen and (max-width: 768px) {
+         min-width: 100%;
+     }
+ }
+
+ .desktop button.accordion-button.collapsed::after {
+     background-image: url("./images/plus.svg") !important;
+ }
+
+ .desktop .accordion-button:not(.collapsed)::after {
+     background-image: url("./images/minus.svg") !important;
+ }
+
+ .responsive button.accordion-button.collapsed.inside::after {
+     background-image: url("./images/plus.svg") !important;
+ }
+
+ .responsive .accordion-button:not(.collapsed).inside::after {
+     background-image: url("./images/minus.svg") !important;
+ }
+
+ .card .icon {
+     width: 60px;
+     height: 60px;
+ }
+
+ .card .cardInfo {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     align-items: center;
+ }
+
+ .cardInfo {
+     margin: 15px 0px 0px 0px;
+ }
+
+ .cardInfo p {
+     margin-bottom: 0px;
+ }
+
+ .title {
+     color: #1D1D1B;
+     font-size: 32px;
+     font-weight: 500;
+     margin-top: 30px;
+
+     @media(max-width:768px) {
+         font-size: 19px;
+         margin-top: 100px;
+
+     }
+ }
+
+ .nav {
+     background: #fff;
+ }
+
+ .nav-info {
+     display: flex;
+     gap: 15px;
+ }
+
+ .nav-link {
+     color: #000 !important;
+     font-size: 18px !important;
+     border-bottom: 1px solid #E8E8E8 !important;
+     border-radius: 0px !important;
+     display: flex !important;
+     align-items: baseline;
+     justify-content: space-between;
+     width: 310px !important;
+
+     & svg path {
+         fill: #000 !important;
+     }
+ }
+
+ .nav-link.active {
+     background-color: #fff !important;
+     color: #E78B40 !important;
+     border-bottom: 1px solid #E78B40 !important;
+
+     & svg path {
+         fill: #E78B40 !important;
+     }
+
+ }
+
+ div#v-pills-tabContent {
+     width: 100% !important;
+ }
+
+ button.accordion-button.collapsed {
+     color: #1D1D1B !important;
+     font-size: 18px !important;
+     font-weight: 500;
+ }
+
+ .accordion-item {
+
+     border-color: #FFF !important;
+     background: #FFF !important;
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.02) !important;
+     margin-bottom: 16px !important;
+ }
+
+ .accordion-button:not(.collapsed) {
+     color: #1D1D1B !important;
+     font-size: 18px;
+     font-weight: 500 !important;
+     background-color: unset !important;
+     box-shadow: unset !important;
+ }
+
+ .card-header {
+     border: unset;
+     border-radius: 8px;
+     background: #FFF;
+     cursor: pointer;
+
+ }
+
+ @media(max-width: 768px) {
+     .desktop {
+         display: none !important;
+     }
+ }
+
+ .responsive {
+     display: none;
+
+     @media(max-width: 768px) {
+         display: block;
+     }
+ }
+
+ .titleInfo {
+     display: flex;
+     justify-content: space-between;
+     font-size: 18px;
+     font-weight: 500;
+
+     >p {
+         margin-bottom: 0px;
+     }
+ }
