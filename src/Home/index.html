@@ -24,7 +24,7 @@
         crossorigin="anonymous"></script>
 
 
-    <title>Hello, world!</title>
+    <title>Help Center</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="tabCard">
-                    <div class="card ">
+                    <div class="card " data-toggle="modal" data-target="#exampleModalCenter">
                         <img src="./images/icon.svg" class="icon" />
                         <div class="cardInfo">
                             <p> This is some text within a card body.</p>
@@ -69,10 +69,10 @@
 
         </div>
         <div class="container quetions">
-            <p class="title">. Frequently Asked Questions</p>
+            <p class="title"><span style="color: #233A7D; width: 10px; height: 10px;">·</span>Frequently Asked Questions
+            </p>
 
             <div class="row">
-
                 <!--START TABS desktop -->
                 <div class="desktop">
                     <div class="d-flex align-items-start ">
@@ -182,12 +182,7 @@
                     </div>
                 </div>
                 <!--END TABS desktop-->
-
-
-
-
             </div>
-
         </div>
 
         <div class="responsive">
@@ -199,7 +194,7 @@
                     </div>
                     <img src="./images/rightArrow.svg" />
                 </div>
-                <div id="tapContetnt" style="display: none;">
+                <div id="tapContetnt" data-toggle="modal" data-target="#collapseModal" style="display: none;">
                     <p>Quetions</p>
                     <img src="./images/plus.svg" />
                 </div>
@@ -219,8 +214,127 @@
                 </div>
             </div>
 
+            <!-- Collapse Modal -->
+            <div class="modal fade" id="collapseModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            We are here to help you :)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body scrollbar" id="scrollbar1">
+
+                    <div class="container">
+
+
+                        <h1>·How to place an order</h1>
+                        <p class="subtitle">Make one order in a few steps:</p>
+
+                        <!-- Steps navigation -->
+                        <div class="steps">
+                            <div class="step"><span>Step 1</span>: Browse and choose your product</div>
+                            <div class="step"><span>Step 1</span>: Add product to cart</div>
+                            <div class="step"><span>Step 1</span>: Complete the checkout</div>
+                            <div class="step"><span>Step 1</span>: Confirm your order</div>
+                            <div class="step"><span>Step 1</span>: Track your order</div>
+                        </div>
+
+                        <!-- Step Details -->
+                        <div class="step-details">
+                            <div class="step-content">
+                                <div class="step_content_flex">
+                                    <h2>Step 1: Browse and choose your product</h2>
+                                    <p>Browse the Homzmart website or use the search bar to find the product you want to
+                                        order.</p>
+                                    <p class="guide-title">Paying for Your homzmart Order - A Step by Step Guide</p>
+                                    <p>At homzmart, we aim to make the process of paying for your orders as simple and
+                                        seamless as
+                                        possible. We offer a variety of payment methods to suit your needs, including
+                                        online payment,
+                                        cash on delivery (COD), and payment at delivery.</p>
+                                </div>
+                                <div class="img_container">
+                                    <img src="https://eg-rv.homzmart.net/mageplaza/bannerslider/banner/image/k/s/ksa-main_banner-en-dt_5__1.jpg"
+                                        alt="Step 1 Image">
+                                </div>
+                            </div>
+
+                            <div class="step-content">
+                                <div class="step_content_flex">
+                                    <h2>Step 2: Browse and choose your product</h2>
+                                    <p>Browse the Homzmart website or use the search bar to find the product you want to
+                                        order.</p>
+                                    <p class="guide-title">Paying for Your homzmart Order - A Step by Step Guide At
+                                        homzmart, we aim to
+                                        make the process of paying for your orders as simple and seamless as possible.
+                                    </p>
+                                </div>
+
+                                <div class="img_container">
+                                    <img src="https://eg-rv.homzmart.net/mageplaza/bannerslider/banner/image/k/s/ksa-main_banner-en-dt_5__1.jpg"
+                                        alt="Step 1 Image">
+                                </div>
+                            </div>
+
+                            <div class="step-content">
+                                <div class="step_content_flex">
+                                    <h2>Step 2: Browse and choose your product</h2>
+                                    <p>Browse the Homzmart website or use the search bar to find the product you want to
+                                        order.</p>
+                                    <p class="guide-title">Paying for Your homzmart Order - A Step by Step Guide At
+                                        homzmart, we aim to
+                                        make the process of paying for your orders as simple and seamless as possible.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="step-content">
+                                <div class="step_content_flex">
+                                    <h2>Step 2: Browse and choose your product</h2>
+                                    <p>Browse the Homzmart website or use the search bar to find the product you want to
+                                        order.</p>
+                                    <p class="guide-title">Paying for Your homzmart Order - A Step by Step Guide At
+                                        homzmart, we aim to
+                                        make the process of paying for your orders as simple and seamless as possible.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer"></div>
+
+            </div>
+        </div>
+    </div>
+
     <script>
         function toggleDiv() {
             var div = document.getElementById("tapContetnt");
@@ -233,7 +347,16 @@
             }
         }
     </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/roboto@0.8.2/index.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
